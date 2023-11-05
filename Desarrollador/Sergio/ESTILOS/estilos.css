@@ -1,0 +1,435 @@
+/* ESTILOS HEADER */
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box; 
+    list-style: none;
+}
+body{
+    background-color: white;
+    height: 900px;
+}
+
+
+header {
+	/*background: url('../IMAGENES/LOGO\ EMPRESA.png');*/
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% 30%;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: rgb(255, 95, 31);
+	text-shadow: 1px 1px 1px #333;
+  	background-image: linear-gradient( 135deg, #2b05ff69 10%, #08fdfd6b 100%);
+	
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+h3, p {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+	cursor: pointer;
+}
+
+/* ESTILOS MENU */
+
+nav{
+    background-image: linear-gradient( 135deg, #2b05ff69 10%, #08fdfd6b 100%);
+    height: 80px;
+    width: 100%;
+}
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo {
+    height: 40px;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size : 18px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}         
+li a.active, li a:hover{
+    background: #000090;
+    transition: .5s;
+    text-decoration: none;
+}     
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+ }
+#check {
+    display: none;
+}
+
+
+
+/* ESTILOS CONTENIDO */
+
+/*About*/
+.presentation{
+    padding-top: 0;
+    text-align: center;
+}
+
+.presentation__picture{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    margin-top: 15px;
+}
+.presentation__copy{
+    width: 80%;
+    margin: 0 auto;
+}
+.presentation__cta{
+    display: inline-block;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 30px;
+    background-color: #5e08fdd5;
+    color: rgb(255, 95, 31);
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 40px;
+}
+.about{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center;
+}
+.about__img{
+    text-align: center;
+}
+.about__img--left{
+    text-align: left;
+}
+.about__picture{
+    max-width: 80%;
+}
+.about__paragraph{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/* ESTILOS FOOTER */
+
+footer{
+    background-color: #08fdfdd5;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: justify;
+    font-family: "comic sans, ms", arial, Verdana;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px #333;
+}
+footer a img:hover{
+    /* EFECTO ACHICAR */
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    border-radius: 5px;
+    /* EFECTO SOMBRA*/
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.5s ease; /* TRANSICION */
+}
+
+.f1{
+    margin: 15px 120px 15px 120px;
+    color: rgb(255, 95, 31);
+    font-size: medium;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 95, 31);
+}
+
+
+/* ESTILOS SERVICIOS */
+p {
+	margin-bottom: 30px;
+}
+
+.texto-regular {
+	font-weight: 400;
+}
+
+/* ------------------------- */
+/* HEADER */
+/* ------------------------- */
+.contenido-encabezado {
+	width: 100%;
+	height: 50;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.texto-encabezado {
+	color: black;
+}
+
+.texto-encabezado .icono {
+	font-size: 40px;
+}
+
+.texto-encabezado .titulo {
+	font-weight: 700;
+	font-size: 50px;
+	animation: azul-neon 2s infinite alternate;
+}
+
+.titulo{
+	font-weight: 700;
+	font-size: 50px;
+	animation: azul-neon 2s infinite alternate;
+}
+
+.texto-encabezado .titulo-naranja-neon, 
+.texto-encabezado .icono {
+	margin-bottom: 0;
+	font-size: 60px;
+	animation: naranja-neon 2s infinite alternate;
+}
+
+.titulo-naranja-neon{
+	margin-bottom: 0;
+	font-size: 60px;
+	animation: naranja-neon 2s infinite alternate;
+}
+
+.texto-encabezado, .descripcion {
+	font-size: 20px;
+}
+
+.descripcion::first-line {
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.btn-link {
+	display: inline-block;
+	padding: 15px 30px;
+	border: 6px dotted #d79e5b;
+	border-radius: 60px;
+	color: black;
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-shadow: 0 -1px 4px #fff, 2px 2px 10px #ff0, 2px -2px 20px #ff8000; 
+	transition: .5s ease;
+}
+
+.btn-link:hover {
+	text-shadow: none;
+	border: 6px dotted rgba(255,255,255,.5);
+}
+
+/* ------------------------- */
+/* Main */
+/* ------------------------- */
+main {
+	color: black;
+	width: 100%;
+	min-height: 100vh;
+	z-index: 100;
+	position: relative;
+	margin-top: 100vh;
+}
+
+main .contenedor {
+	padding: 50px 0;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+main .subtitulo-h2 {
+	margin-bottom: 50px;
+	padding: 0;
+	font-size: 50px;
+	text-align: center;
+}
+
+main .subtitulo-h2, main .letra-capital {
+	text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+}
+
+main .letra-capital {
+	font-size: 55px;
+	font-family: serif;
+	margin-right: 10px;
+	line-height: 15px;
+}
+
+/* ------------------------- */
+/* Animaciones */
+/* ------------------------- */
+@keyframes azul-neon {
+	0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+		text-shadow: 9px 9px 18px #3485ff, 
+					 3px 3px 5px #00246c, 
+					 -3px -3px 5px #00246c, 
+					 -9px -9px 27px #3485ff;
+	}
+
+	10%, 15%, 60% {
+		text-shadow: none;
+	}
+}
+
+@keyframes naranja-neon {
+	0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+		text-shadow: 0 -1px 4px #fff, 
+					 0 -2px 10px #ff0,
+					 0 -10px 20px #ff8000;
+	}
+
+	10%, 15%, 60% {
+		text-shadow: none;
+	}
+}
+
+/* ESTILOS CONTACTO */
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 800px) {
+
+    .presentation__copy{
+        width: 100%;
+    }
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about.container{
+        padding-top: 30x;
+    }
+    .about__img--left{
+        text-align: center;
+    }
+    .about__texts:last-child{
+        grid-row: 3/4;
+    }
+
+    .presentation__picture{
+        width: 120px;
+        height: 120px;
+    }
+    .about{
+        row-gap: 60px;
+    }
+    .about.container{
+        padding-top: 10x;
+    }
+    .checkbtn {
+        display : block ;
+    }
+    ul{
+        font-size: 16px;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background : none ;
+        color : red ;
+    }
+    #check:checked~ul{
+        left: 0;               
+    }
+
+    footer{
+        width: 100%;
+        height: min-content;
+    }
+
+    .f1{
+        width: 100%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+:root {
+    /** 
+    --color-1: #f76876;
+    --color-2: #ca677a;
+    --color-3: #8d494e;
+    --color-4: #5a3136; 
+    --color-5: #3d1c22;
+    **/
+
+    --color-1: #cdffff;
+    --color-2: #94e7ff;
+    --color-3: #40cfff;
+    --color-4: #2499c7; 
+    --color-5: #006691;
+
+    --our-white: #FEFEFE;
+    --our-black: #101010;
+
+    --transition: 0.3s all ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-image: url("../Imagenes/fondo_principal.jpg");
+    background-position: cover;
+    background-size: 100%;
+}
+
+header {
+    font-family: 'Comfortaa', cursive;
+    contain: content;
+    display: flex;
+    padding: 10em;
+    align-items: center;
+    justify-content: center;
+    color: var(--our-white);
+    background-color: var(--our-black);
+}
+
+svg {
+    align-self: center;
+    width: 20px;
+    height: 20px;
+}
+
+.fs-5{
+    color: var(--our-white);
+}
+
+.Logo {
+    margin-right: 45px;
+    height: 450px;
+    width: 450px;
+    border-radius: 10px;
+}
+
+.titulo-logo {
+    font-size: 56px;
+    font-weight: bold;
+    background-color: var(--color-3);
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.card {
+    background-color: var(--our-white);
+}
+
+.card p {
+    font-size: 24px;
+}
+
+.slogan {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    z-index: 6;
+    top: 0;
+    font-size: 4.2rem;
+    background-color: var(--color-5);
+    color: var(--our-white);
+    padding: 7px 7px;
+    text-align: center;
+    width: 100%;
+}
+
+.display-1, .display-2 {
+    background-color: var(--color-4);
+    color: var(--our-white);
+    font-size: 46px;
+    padding: 7px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.display-6{
+    color: var(--our-black);
+    background-color: var(--color-1);
+    width: max-content;
+    padding: 7px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.card {
+    margin: auto;
+    padding: 0%;
+}
+
+.row {
+    margin: 50px;
+    padding: 50px;
+}
+
+.aside_info .card .txt_info {
+    padding: 15px;
+}
+
+.contacto {
+    margin: auto;
+    text-align: center;
+}
+
+#carouselExampleCaptions {
+    max-width: 75%;
+    margin: auto;
+    padding: 0%;
+}
+
+p {
+    font-size: 24px;
+}
+
+.carrou img {
+    width: 80%;
+    height: 500px;
+}
+
+.formulario-add {
+    background-color: var(--our-white);
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    display: grid;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario form {
+    max-width: 450px;
+    margin-bottom: 1rem;
+    background-color: var(--our-black);
+    border-radius: 15px;
+    color: var(--our-white);
+    text-align: center;
+    padding: 1rem;
+    text-align: left;
+}
+
+.formulario form .name label,
+.formulario form .password label {
+    font-size: 20px;
+    position: relative;
+    left: 0;
+    top: -40px;
+    pointer-events: none;
+    transition: var(--transition);
+}
+
+.formulario form .name input,
+.formulario form .password input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    background: none;
+    color: var(--our-white);
+    border-bottom: 2px var(--our-white) solid;
+}
+
+.formulario form .name input:focus~label,
+.formulario form .name input:valid~label,
+.formulario form .password input:focus~label,
+.formulario form .password input:valid~label {
+    top: -60px;
+    left: -7px;
+    transform: scale(0.6);
+}
+
+.formulario form .name,
+.formulario form .password,
+.formulario form .check {
+    margin-bottom: 1rem;
+}
+
+.formulario form .login {
+    border: 1px var(--our-white) solid;
+    border-radius: 10px;
+    outline: none;
+    background: none;
+    color: var(--our-white);
+    padding: 7px 14px;
+    font-size: 22px;
+    transition: var(--transition);
+}
+
+.formulario a {
+    color: var(--our-white);
+    text-decoration: none;
+    transition: 0.5s all ease;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+.formulario a:hover,
+.formulario a:focus {
+    color: var(--our-black);
+    background-color: var(--our-white);
+}
+
+.formulario form .login:hover,
+.formulario form .login:focus {
+    background: var(--our-white);
+    color: var(--our-black);
+}
+
+.formulario .btn-pass {
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: var(--our-black);
+    color: var(--our-white);
+    top: -45px;
+    left: 66%;
+}
+
+.tabla-de-empleado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.organizador {
+    display: grid;
+    contain: content;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.organizador .acordeon{
+    background-color: var(--color-4);
+    color: var(--our-white);
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-size: 28px;
+    overflow: hidden;
+    height: max-content;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.organizador .acordeon:hover, .organizador .acordeon:focus{
+    background-color: var(--color-5);
+}
+
+.organizador .acordeon:active{
+    background-color: var(--color-4);
+}
+
+.organizador .display-obedience{
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding: 1.3rem;
+    background-color: var(--color-2);
+    color: var(--our-black);
+    transition: var(--transition);
+    display: none;
+}
+
+.organizador .display-obedience .lista{
+    background-color: var(--color-3);
+    color: var(--our-black);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0.7rem;
+    font-size: 20px;
+}
+
+.confirmar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.confirmar .cont{
+    overflow: hidden;
+    contain: content;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--color-3);
+    width: max-content;
+    text-align: center;
+}
+
+.tabla-de-empleados{
+    display: grid;
+}
+
+.empleado {
+    border-radius: 10px;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.facturas {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    max-width: 100%;
+    margin-bottom: 1.3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    border-radius: 5px;
+}
+
+.fact {
+    background-color: var(--our-white);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 0.2rem;
+    font-size: 22px;
+}
+
+.v {
+    background-color: var(--color-5);
+    padding: 1rem;
+    color: var(--our-white);
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.v a {
+    padding: 5px 7px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--our-white);
+    float: bottom;
+}
+
+.v a:hover,
+.v a:focus {
+    text-decoration: underline;
+}
+
+.v h6 {
+    text-transform: uppercase;
+}

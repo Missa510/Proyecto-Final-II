@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{font-family: 'Ubuntu', sans-serif;}
+
+body {
+    background: #abbaab;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+
+header {
+    padding: 0.7em;
+    display: grid;
+    background-image: url('../Imagenes_generales/jeder.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-position-y: 0;
+    background-repeat: no-repeat;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.cosa {
+    background: #403b4a9a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e7e9bb9d, #403b4ada);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e7e9bb9d, #403b4ada);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 1em;
+    transition: all 0.4s ease;
+    border-radius: 6px;
+    display: flex;
+    width: max-content;
+    max-width: 100%;
+    contain: content;
+    margin-bottom: 1em;
+}
+
+.logo {
+    border-radius: 6px;
+    width: 169px;
+    height: 169px;
+    margin-right: 0.7em;
+}
+
+.titulazo {
+    font-family: 'consolas';
+    font-size: 100px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 6;
+    background-color: rgb(20, 20, 20);
+    padding: 0.2em;
+    max-height: 100px;
+    width: 100%;
+}
+
+.linx {
+    padding: 0.6em;
+    background: rgb(20, 20, 20);
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 2.6px;
+    margin-right: 2.6px;
+    color: white;
+    border-radius: 6px;
+    contain: content;
+}
+
+svg {
+    align-self: center;
+    width: 20px;
+    height: 20px;
+}
+
+.alert svg {
+    width: 19px;
+    height: 19px;
+    margin-right: 6px;
+}
+
+.linx:hover,
+.linx:focus,
+.active {
+    transition: all 0.4s ease;
+    background: rgb(224, 224, 224);
+    color: black;
+}
+
+.linx:active {
+    background-color: rgb(78, 78, 78);
+    font-weight: bolder;
+}
+
+main {
+    width: 100%;
+    padding: 0.7em 4em 0.7em 4em;
+    max-height: 3000px;
+    contain: content;
+}
+
+.main-puro {
+    width: 100%;
+    background: rgba(34, 37, 0, 0.329);
+    border-radius: 6px;
+    padding: 0.7em;
+    text-align: justify;
+    /* margin: 1em; */
+}
+
+aside {
+    background: rgba(34, 37, 0, 0.329);
+    padding: 0.7em;
+    float: right;
+    border-radius: 6px;
+    width: 28%;
+    contain: content;
+    text-align: center;
+    height: 100%;
+    margin-bottom: 0.7em;
+}
+
+.owners,
+.devep {
+    contain: content;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+}
+
+.contactos {
+    text-align: justify;
+}
+
+.devep {
+    width: 100%;
+    height: max-content;
+    display: grid;
+}
+
+.space {
+    width: 100%;
+    height: 0.7em;
+}
+
+.santiago {
+    contain: content;
+    align-self: center;
+    color: white;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    /* opacity: 75%; */
+    text-align: center;
+    border-radius: 6px;
+    background-image: url('../../Imagenes/PFP/santiago.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 280px;
+    width: 75%;
+}
+
+.sergio {
+    contain: content;
+    align-self: center;
+    color: white;
+    text-align: center;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    border-radius: 6px;
+    /* opacity: 75%; */
+    background-image: url('../../Imagenes/PFP/sergio.jpeg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 280px;
+    width: 75%;
+}
+
+.formasXD {
+    background-color: rgba(99, 59, 32, 0.356);
+    padding: 0.35em;
+    width: 100%;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.login {
+    margin: 0.7em;
+    padding: 0.7em;
+    background: rgba(34, 37, 0, 0.329);
+    border-radius: 6px;
+}
+
+.name {
+    float: center;
+    font-size: 28px;
+    color: white;
+    text-decoration: underline;
+    border-radius: 6px;
+    padding: 3px;
+}
+
+.name:hover,
+.name:focus {
+    transition: all 0.4s ease;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+.name:active {
+    background-color: rgb(102, 102, 102);
+}
+
+.desc {
+    float: center;
+    font-size: 18px;
+}
+
+article {
+    text-align: justify;
+    background: rgba(36, 39, 0, 0.329);
+    padding: 1em;
+    width: 71%;
+    float: left;
+    contain: content;
+    border-radius: 6px;
+    margin-bottom: 0.7em;
+    height: 100%;
+    
+}
+
+.enviar {
+    border-radius: 6px;
+    border: none;
+    padding: 0.5em 8em;
+    font-size: 16px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+.enviar:hover,
+.enviar:focus {
+    transition: all 0.4s ease;
+    background-color: rgb(20, 20, 20);
+    transform: scale(1.01);
+}
+
+.piedelogin {
+    display: flex;
+    justify-content: space-around;
+}
+
+.vis,
+.mis {
+    border-radius: 6px;
+}
+
+.link-cardeta {
+    color: black;
+    font-size: 20px;
+}
+
+.link-cardeta:hover,
+.link-cardeta:focus {
+    color: rgb(43, 43, 43);
+    text-decoration: none;
+    font-style: italic;
+}
+
+.banner {
+    align-self: center;
+    border-radius: 6px;
+    width: 550px;
+    height: 250px;
+}
+
+.error-de-login {
+    background: linear-gradient(10deg, rgba(211, 50, 50, 0.511), rgba(107, 10, 10, 0.634));
+    padding: 0.3em;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.error-logo svg {
+    height: 100px;
+    width: 100px;
+    margin-right: 0.2em;
+}
+
+.mario {
+    /* margin: 67px; */
+    border-radius: 6px;
+    background-image: url("../Imagenes_generales/mario.png");
+    width: 32px;
+    height: 34px;
+    justify-content: center;
+    animation: sprites-mario 1s steps(10) infinite;
+    /* transform: scale(5.5); */
+}
+
+#fecha {
+    text-align: center;
+    font-weight: 200;
+    font-size: 32px;
+    background: linear-gradient(150deg, rgb(31, 31, 31), rgb(122, 122, 122));
+    color: white;
+    border-radius: 6px;
+    padding: 0.25em;
+}
+
+.btn-rusure-aceptar, .btn-rusure-cancelar{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 24px;
+    transition: 0.5s all ease-out;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.btn-rusure-aceptar{ background-color: #282828; color: #fff; }
+.btn-rusure-cancelar{ background-color: rgb(226, 226, 226); }
+
+.btn-rusure-aceptar:hover{ background-color: #171717;}
+.btn-rusure-cancelar:hover{ background-color:rgb(195, 195, 195);}
+
+.profile {
+    background-color: rgba(0, 35, 35, 0.418);
+    padding: 0.7em;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.img-error {
+    width: 50%;
+    border-radius: 5px;
+}
+
+.logo-user {
+    height: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    padding: 0.4em;
+    background: black;
+    color: white;
+}
+
+@keyframes sprites-mario {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 389px;
+    }
+}
+
+@media(min-width: 3160px) {
+    * {
+        font-size: +36px;
+    }
+
+    .linx {
+        font-size: 24px;
+    }
+
+    .logo {
+        width: calc(169px + 50px);
+        height: calc(169px + 50px);
+    }
+
+    .error-de-login {
+        font-size: 14px;
+    }
+
+    .santiago,
+    .sergio {
+        width: 49%;
+        height: 480px;
+    }
+
+    .devep {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .space {
+        width: 0;
+        height: 0;
+        background-size: 0;
+    }
+}
+
+@media(max-width: 1580px) {
+    .titulazo {
+        font-size: calc(100px - 46px);
+    }
+
+    .logo {
+        width: calc(169px - 70px);
+        height: calc(169px - 70px);
+    }
+
+    .linx {
+        font-size: calc(16px - 3px);
+    }
+
+    .santiago,
+    .sergio {
+        width: 49%;
+    }
+
+    .devep {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .space {
+        width: 0;
+        height: 0;
+        background-size: 0;
+    }
+
+    .name {
+        font-size: 21px;
+    }
+
+    #fecha {
+        font-size: 18px;
+    }
+
+    .link-cardeta {
+        font-size: 14px;
+    }
+
+    .contactos {
+        width: 100%;
+    }
+
+    th,
+    td {
+        font-size: 14px;
+    }
+
+    svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    article,
+    aside {
+        width: 100%;
+    }
+}
+
+@media(max-width: 750px) {
+    .titulazo {
+        font-size: calc(100px - 76px);
+    }
+
+    .logo {
+        width: calc(169px - 100px);
+        height: calc(169px - 100px);
+    }
+
+    nav {
+        display: flexbox;
+    }
+
+    .santiago {
+        height: 100px;
+        float: left;
+        margin-bottom: 0;
+    }
+
+    .sergio {
+        height: 100px;
+        float: left;
+        margin-top: 0;
+    }
+
+    .name {
+        font-size: 14px;
+    }
+
+    .desc {
+        font-size: 6px;
+    }
+
+    #fecha {
+        font-size: 12px;
+    }
+
+    .linx {
+        font-size: calc(16px - 8px);
+    }
+
+    .enviar {
+        padding: 0.25em 4em;
+        font-size: 12px;
+    }
+
+    .link-cardeta {
+        font-size: 8px;
+    }
+
+    th,
+    td {
+        font-size: 6px;
+    }
+
+    svg {
+        width: 6px;
+        height: 6px;
+    }
+}
