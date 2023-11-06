@@ -42,7 +42,6 @@ if (empty($_SESSION["id_usu"])) {
         </div>
         <a class="acordeon" href="?control=tipo&&funcion=Estado"> Tipo de Documento </a>
         <a class="acordeon" href="?control=clientes&&funcion=Estado"> Clientes </a>
-        <a class="acordeon" href="?control=estados&&funcion=Estado"> Estados </a>
     </div>
 
 

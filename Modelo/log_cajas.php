@@ -76,16 +76,14 @@ class Cajas
 
         #Procesar la consulta de datos
         $resuls_caja = mysqli_query($conex_var, $sql);
-
-
+        
+        #Retornar el valor de la consulta
+        #echo '<p class="fs-5">'.$sql.'</p>';   
         while ($registro = mysqli_fetch_array($resuls_caja)) {
             $this->datos[] = $registro;
         }
 
         return $this->datos;
-
-        #Retornar el valor de la consulta
-        #echo '<p class="fs-5">'.$sql.'</p>';   
     }
     public function Modificar()
     {
