@@ -101,6 +101,7 @@
                 <?php } ?>
 
             </select>
+            <div class="text-muted"> Si la ciudad que desea insertar no aparece, <a href="?control=ciudades&&funcion=Estado">Haga click aquí para insertar o modificarlo</a> </div>
         </div>
         <div class="mb-3">
             <label for="id_direccion" class="form-label">Dirección</label>

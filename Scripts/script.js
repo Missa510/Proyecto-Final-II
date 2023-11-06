@@ -2,7 +2,7 @@
 const conteo = document.getElementsByClassName("Header")
 for (let i = 0; i < conteo.length; i++) {
     const texto = conteo.item(i).textContent
-    document.querySelector('TITLE').innerText = "Inverciones GO | " + texto   
+    document.querySelector('TITLE').innerText = "Inverciones GO | " + texto
 }
 //Funciones
 
@@ -18,6 +18,13 @@ function ViewPassword() {
 
 var acc = document.getElementsByClassName("acordeon");
 var i;
+
+function ZeroBitch() {
+    let numero = document.getElementById("id_cantidad").value
+    if (numero == 0) {
+        alert('Al cambiar la cantidad a 0, la existencia se inactiva. La puedes editar despues')
+    }
+}
 
 // console.log(acc)
 

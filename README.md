@@ -9,4 +9,4 @@ Gracias por su atención UwU
 
 Este proyecto está hecho entermanete con PHP y MySQL 
 
->You're a asshole if you translate this message lmfao
+>You're an asshole if you translate this message lmfao

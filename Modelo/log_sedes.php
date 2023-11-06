@@ -45,7 +45,7 @@ class Sedes
         $conex_var = $base->conex();
 
         #Generar la consulta de datos
-        $sql = "SELECT sed.id_sede, sed.nom_sed, sed.direc_sed, ciu.nom_ciu, est.nom_est FROM Sedes as sed, Ciudades as ciu, Estado as est WHERE sed.fkciudad = ciu.id_ciu AND sed.fkest = est.id_est ORDER BY est.nom_est ASC;";
+        $sql = "SELECT sed.id_sede, sed.nom_sed, sed.direc_sed, ciu.nom_ciu, est.nom_est FROM Sedes as sed, Ciudades as ciu, Estado as est WHERE sed.fkciudad = ciu.id_ciu AND sed.fkest = est.id_est ORDER BY sed.id_sede ASC;";
 
         #Procesar la consulta de datos
         $resuls_sedes = mysqli_query($conex_var, $sql);
