@@ -4,11 +4,12 @@ require_once("BasesDeDatos\conexion.php");
 
 class Empleados
 {
-    private $id_emp, $dni_emp, $ape_emp, $nom_emp, $edad_emp, $tel_emp, $email_emp, $direc_emp, $fecha_de_nacimiento_emp, $fecha_ingreso_emp, $fecha_egreso_emp, $fkgender, $fkcargo, $fksede, $fkeps, $fkcaja, $fkturno, $descrip_emp, $datos;
+    private $id_emp, $fktipo, $dni_emp, $ape_emp, $nom_emp, $edad_emp, $tel_emp, $email_emp, $direc_emp, $fecha_de_nacimiento_emp, $fecha_ingreso_emp, $fecha_egreso_emp, $fkgender, $fkcargo, $fksede, $fkeps, $fkcaja, $fkturno, $descrip_emp, $fkest, $datos;
 
-    public function __construct($id, $dni, $apellidos, $nombres, $edad, $telefono, $correo, $direccion, $fecha_de_nacimiento, $fecha_ingreso, $fecha_egreso, $genero, $cargo, $eps, $CajaDeCompensacion, $sede, $turno, $decripcion)
+    public function __construct($id, $tipo_de_dni, $dni, $apellidos, $nombres, $edad, $telefono, $correo, $direccion, $fecha_de_nacimiento, $fecha_ingreso, $fecha_egreso, $genero, $cargo, $eps, $CajaDeCompensacion, $sede, $turno, $decripcion, $estado)
     {
         $this->id_emp = $id;
+        $this->fktipo = $tipo_de_dni;
         $this->dni_emp = $dni;
         $this->ape_emp = $apellidos;
         $this->nom_emp = $nombres;
@@ -26,11 +27,16 @@ class Empleados
         $this->fksede = $sede;
         $this->fkturno = $turno;
         $this->descrip_emp = $decripcion;
+        $this->fkest = $estado;
     }
 
     public function getIdemp()
     {
         return $this->id_emp;
+    }
+    public function getTipoDNI()
+    {
+        return $this->fktipo;
     }
     public function getDniemp()
     {
@@ -100,6 +106,10 @@ class Empleados
     {
         return $this->descrip_emp;
     }
+    public function getEstado()
+    {
+        return $this->descrip_emp;
+    }
 
     public function Mostrar()
     {
@@ -110,7 +120,7 @@ class Empleados
         $conex_var = $base->conex();
 
         #Generar la consulta de datos
-        $sql = "SELECT emp.id_emp, emp.dni_emp, emp.ape_emp, emp.nom_emp, emp.edad_emp, emp.tel_emp, emp.email_emp, emp.direct_emp, emp.fecha_de_nacimiento_emp, emp.fecha_ingreso_emp, emp.fecha_egreso_emp, gen.gender, car.cargo, car.sueldo, trn.nom_turno, eps.eps, caja.caja, sed.nom_sed, emp.descrip_emp FROM Empleados as emp, Generos as gen, Cargos as car, Turnos as trn, EPS as eps, Cajadecompensacion as caja, Sedes as sed WHERE emp.fkgender = gen.id_gender AND emp.fkeps = eps.id_eps AND emp.fkcaja = caja.id_caja AND emp.fkcargo = car.id_cargo AND emp.fkturno = trn.id_turnos AND emp.fksede = sed.id_sede ORDER BY emp.ape_emp ASC;";
+        $sql = "SELECT emp.id_emp, tipo.iniciales, tipo.nom_tipo, emp.dni_emp, emp.ape_emp, emp.nom_emp, emp.edad_emp, emp.tel_emp, emp.email_emp, emp.direct_emp, emp.fecha_de_nacimiento_emp, emp.fecha_ingreso_emp, emp.fecha_egreso_emp, gen.gender, car.cargo, car.sueldo, trn.nom_turno, eps.eps, caja.caja, sed.nom_sed, emp.descrip_emp, est.nom_est FROM TipoDNI AS tipo, Empleados as emp, Generos as gen, Cargos as car, Turnos as trn, EPS as eps, Cajadecompensacion as caja, Sedes as sed, Estado AS est WHERE emp.fkgender = gen.id_gender AND emp.fkeps = eps.id_eps AND emp.fkcaja = caja.id_caja AND emp.fkcargo = car.id_cargo AND emp.fkturno = trn.id_turnos AND emp.fksede = sed.id_sede AND emp.fktipo = tipo.id_tipo AND emp.fkest = est.id_est ORDER BY emp.ape_emp ASC;";
 
         #Procesar la consulta de datos
         $resuls_empleados = mysqli_query($conex_var, $sql);

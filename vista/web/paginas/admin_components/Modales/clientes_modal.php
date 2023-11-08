@@ -27,6 +27,7 @@ $direccion = $con[0]["direc_clien"];
 
                 <?php } ?>
             </select>
+            <div class="text-muted"> Si el tipo de documetno que desea insertar no aparece, <a href="?control=tipo&&funcion=Estado">Haga click aquí para insertar o modificarlo</a> </div>
         </div>
         <div class="mb-3">
             <label for="id_dni" class="form-label">DNI</label>

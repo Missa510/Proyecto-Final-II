@@ -606,8 +606,8 @@ VALUES (
 
 INSERT INTO Generos(gender)
 VALUES ("Masculino"), ("Femenino"), ("Nazi"), ("Chavista"), (
-        "Elefamnte guerrero psiquico ancestral"
-    ), ("Mexicano");
+        "Elefante guerrero psiquico ancestral"
+    ), ("Mexicano"), ("otros");
 
 INSERT INTO
     Cargos(
@@ -671,7 +671,7 @@ VALUES (
         "Cl 63A # 90 - 45B AV. Lagos de la cadaverica mama de Rada",
         "1987-09-10",
         "2023-09-14",
-        "2023-09-14",
+        "2024-03-14",
         5,
         3,
         1,
@@ -691,7 +691,7 @@ VALUES (
         "Kr 54B Av. Los Olivos #90 - 51",
         "1992-06-25",
         "2023-09-14",
-        "2023-09-14",
+        "2024-03-14",
         2,
         1,
         2,
@@ -711,7 +711,7 @@ VALUES (
         "Cl 191A # 11A - 25",
         "1986-06-12",
         "2023-09-14",
-        "2023-09-14",
+        "2024-03-14",
         5,
         1,
         1,
