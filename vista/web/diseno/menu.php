@@ -10,9 +10,9 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="?control=home&&funcion=principal">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="?control=home&&funcion=precios">Precios</a>
-                </li>
+                <!-- <li class="nav-item"> -->
+                    <!-- <a class="nav-link" href="?control=home&&funcion=precios">Precios</a> -->
+                <!-- </li> -->
             </ul>
             <div class="d-flex" role="search">
                 <a href="?control=administrador&&funcion=login" class="btn btn-dark">Administrador</a>

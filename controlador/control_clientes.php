@@ -1,6 +1,6 @@
 <?php
 
-require_once("Modelo\log_".$control.".php");
+require_once("Modelo\log_" . $control . ".php");
 require_once("Modelo\log_tipo.php");
 /**
  * Summary of ClientesControl
@@ -140,7 +140,8 @@ class ClientesControl
 
         $type = $_POST["type"];
 
-        $cliente = match($type){
+        $cliente = match ($type) {
+            'TipoDNI' => new Clientes(null, $query, null, null, null, null, null, null, null),
             'dni' => new Clientes(null, null, $query, null, null, null, null, null, null),
             'apellido' => new Clientes(null, null, null, null, $query, null, null, null, null),
             'nombre' => new Clientes(null, null, null, $query, null, null, null, null, null),
@@ -151,12 +152,15 @@ class ClientesControl
 
         $tabla = $cliente->ConsultaString();
 
-        if(mysqli_fetch_row($tabla)){
+        if (mysqli_fetch_row($tabla)) {
+
+            $tipo = new TipoDNI(null, null, null);
+            $select = $tipo->Mostrar();
 
             require_once("vista\web\paginas\admin_components\clientes.php");
 
         } else {
-            
+
             require_once("vista/web/paginas/errors/data_unknown.php");
             $this->Estado();
         }

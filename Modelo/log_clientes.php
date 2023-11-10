@@ -286,6 +286,10 @@ class Clientes
 
             $sql = "SELECT cli.id_clien, tipo.nom_tipo, tipo.iniciales, cli.dni_clien, cli.nom_clien, cli.ape_clien, cli.tel_clien, cli.mail_clien, cli.direc_clien, est.nom_est FROM Clientes AS cli, Estado AS est, TipoDNI AS tipo WHERE cli.fkest = est.id_est AND cli.fktipo = tipo.id_tipo AND cli.tel_clien = '{$this->getTel_cli()}';";
 
+        } else if ( $this->getTipoDNI() ){
+
+            $sql = "SELECT cli.id_clien, tipo.nom_tipo, tipo.iniciales, cli.dni_clien, cli.nom_clien, cli.ape_clien, cli.tel_clien, cli.mail_clien, cli.direc_clien, est.nom_est FROM Clientes AS cli, Estado AS est, TipoDNI AS tipo WHERE cli.fkest = est.id_est AND cli.fktipo = tipo.id_tipo AND (tipo.nom_tipo LIKE '%{$this->getTipoDNI()}%' OR tipo.nom_tipo LIKE '%{$this->getTipoDNI()}' OR tipo.nom_tipo LIKE '{$this->getTipoDNI()}%' OR tipo.nom_tipo = '{$this->getTipoDNI()}');";
+
         } else {
             $sql = null;
         }

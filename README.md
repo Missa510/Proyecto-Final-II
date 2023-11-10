@@ -1,13 +1,13 @@
-# Proyecto-Final
+# Inventario Unity (no escojí el nombre)
 
 Este es mi proyecto con **Sergio Sandoval**
-Written by *Santiago Quintero*, March 2023
+Written by *Santiago Quintero* aka [Missa510](https://github.com/Missa510), March 2023
 
 ## Atención
 
-Gracias por su atención UwU
+Este proyecto está hecho entermanete con PHP y MySQL en el sistema de modelado MVC
 
-Este proyecto está hecho entermanete con PHP y MySQL 
+Gracias por su atención UwU
 
 ## Nota
 

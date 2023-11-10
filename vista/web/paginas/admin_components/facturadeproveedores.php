@@ -68,6 +68,7 @@
                     <div class="mb-3">
                         <strong>Precio total:</strong>
                         <?= number_format(($precio * $cantidad) - ($precio * $cantidad * $descuento), 2); ?> &dollar;COP
+                        <br>
                         <strong>Precio sin el descuento:</strong>
                         <?= number_format($BuryTheLight["precio_compra"] * $BuryTheLight["cant_produc"], 2); ?> &dollar;COP
                     </div>

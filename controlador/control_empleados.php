@@ -1,7 +1,6 @@
 <?php
 
-require_once("Modelo\log_".$control.".php");
-
+require_once("Modelo\log_$control.php");
 
 class EmpleadosControl
 {

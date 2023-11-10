@@ -15,6 +15,7 @@
                 <?php if (!empty($_POST['query'])) { ?> <input type="text" class="form-control" name="query" value="<?= $_POST['query']; ?>" placeholder="Ingresa el dato a buscar"> <?php } else { ?> <input type="text" class="form-control" name="query" placeholder="Ingresa el dato a buscar"> <?php } ?>
 
                 <select class="form-select" name="type">
+                    <option value="TipoDNI">Tipo de DNI</option>
                     <option value="dni">DNI (Docuento)</option>
                     <option value="apellido">Apellido</option>
                     <option value="nombre">Nombre</option>

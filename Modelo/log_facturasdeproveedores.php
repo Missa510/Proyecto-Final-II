@@ -65,13 +65,13 @@ class Facturasdeproveedores
         $conex_var = $base->conex();
 
         #Generar la consulta de datos
-        $sql = "SELECT fact.id_facompras, fact.codigo_facompras, fact.fecha_facompras, fact.cant_produc, fact.descuento_proveedores, Productos.precio_compra, Productos.nom_produc, prov.nom_prov, sed.nom_sed, est.nom_est FROM Facturasdeproveedores AS fact, Proveedores AS prov, Sedes AS sed, Estado AS est INNER JOIN Productos ON fact.fkproduc = Productos.id_produc WHERE fact.fkprov = prov.id_prov AND fact.fksede = sed.id_sede AND fact.fkest = est.id_est ORDER BY fact.fecha_facompras;";
+        $sql = "SELECT fact.id_facompras, fact.codigo_facompras, fact.fecha_facompras, fact.cant_produc, fact.descuento_proveedores, Productos.precio_compra, Productos.nom_produc, prov.nom_prov, sed.nom_sed, est.nom_est FROM Facturasdeproveedores AS fact, Proveedores AS prov, Sedes AS sed, Estado AS est, Productos WHERE fact.fkproduc = Productos.id_produc AND fact.fkprov = prov.id_prov AND fact.fksede = sed.id_sede AND fact.fkest = est.id_est ORDER BY fact.fecha_facompras;";
 
         #Procesar la consulta de datos
         $resuls_factucompras = mysqli_query($conex_var, $sql);
 
         #Retornar el valor de la consulta
-        #echo '<p class="fs-5">'.$sql.'</p>';   
+        #var_dump($sql, $resuls_factucompras);
         return $resuls_factucompras;
     }
 

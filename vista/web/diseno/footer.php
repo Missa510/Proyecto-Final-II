@@ -7,7 +7,7 @@
                         Nombre de la compañia
                     </h6>
                     <p class="empresa">
-                        <a href="?control=home&&funcion=principal">Gar - Ochoa</a>
+                        Gar - Ochoa
                     </p>
                     <br><br>
                     <h6>

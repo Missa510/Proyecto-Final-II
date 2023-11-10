@@ -15,7 +15,7 @@ class FacturasdeproveedoresControl
         $factucompras = new Facturasdeproveedores(null, null, null, null, null, null, null, null, null);
         $tabla = $factucompras->Mostrar();
 
-        $productos = new Productos(null, null, null, null, null);
+        $productos = new Productos(null, null, null, null, null, null, null);
         $selectProductos = $productos->MostrarHabilitados();
 
         $proveedores = new Proveedores(null, null, null, null, null, null);
